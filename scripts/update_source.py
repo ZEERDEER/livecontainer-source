@@ -79,7 +79,23 @@ APPS = [
 ]
 
 
-def http_get(url, headers=None):
+OFFICIAL_SOURCES = [
+    # WQ Files
+    "https://raw.githubusercontent.com/kolbicz/WQFiles/main/source.json",
+    # INSAV
+    "https://raw.githubusercontent.com/ios151/Insav-releases/main/altsource.json",
+    # Erosion-CN
+    "https://raw.githubusercontent.com/Kianuni/Erosion-CN/main/apps.json",
+    # Andarium (Kernarium)
+    "https://raw.githubusercontent.com/imxieyi/Kernarium/main/sideload/source.json",
+    # SideInstaller (+ Nightflix)
+    "https://raw.githubusercontent.com/FrizzleM/SideInstaller/main/frizzlem.json",
+]
+
+
+def fetch_official(url):
+    data = json.loads(http_get(url, {"User-Agent": "Mozilla/5.0"}))
+    return data.get("apps", [])
     req = urllib.request.Request(url, headers=headers or {})
     with urllib.request.urlopen(req, timeout=30) as r:
         return r.read()
@@ -186,11 +202,39 @@ def main():
         apps.append(entry)
         print(f"OK {cfg['name']}: {info['version']} ({info['downloadURL']})")
 
+    # Merge in apps from official sources (mirrored verbatim).
+    auto_ids = {a["bundleIdentifier"] for a in apps}
+    old_official = [a for bid, a in old.items() if bid not in auto_ids]
+    official_apps = []
+    official_failed = False
+    for url in OFFICIAL_SOURCES:
+        try:
+            got = fetch_official(url)
+            print(f"OK official {url}: {len(got)} apps")
+            official_apps.extend(got)
+        except Exception as e:
+            official_failed = True
+            print(f"WARN official {url}: {e}; keeping previous entries")
+    seen = set()
+    merged = []
+    for a in apps + official_apps:
+        bid = a.get("bundleIdentifier")
+        if bid in seen:
+            continue
+        seen.add(bid)
+        merged.append(a)
+    if official_failed:
+        for a in old_official:
+            if a["bundleIdentifier"] not in seen:
+                seen.add(a["bundleIdentifier"])
+                merged.append(a)
+    apps = merged
+
     src = {
         "name": "ZEERDEER",
         "identifier": "com.zeerdeer.livecontainer.source",
         "subtitle": "自用自动更新源",
-        "description": "GestaltX、Roam Control、twoyi、Tamio、WrapPin、Nestvane 的自动更新源，每天检查上游新版本。",
+        "description": "全部应用的自动更新源：每天同步官方源并检查上游新版本。",
         "website": "https://github.com/ZEERDEER/livecontainer-source",
         "apps": apps,
     }
