@@ -167,7 +167,7 @@ def main():
         "name": "ZEERDEER",
         "identifier": "com.zeerdeer.livecontainer.source",
         "subtitle": "自用自动更新源",
-        "description": "GestaltX、Roam Control、twoyi 的自动更新源，每天检查上游新版本。",
+        "description": "GestaltX、Roam Control、twoyi、Tamio 的自动更新源，每天检查上游新版本。",
         "website": "https://github.com/ZEERDEER/livecontainer-source",
         "apps": apps,
     }
