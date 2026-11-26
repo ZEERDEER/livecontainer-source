@@ -21,4 +21,18 @@ https://raw.githubusercontent.com/ZEERDEER/livecontainer-source/main/apps.json
 | WrapPin | suversal/WrapPin |
 | Nestvane | atomsprout/nestvane |
 
+## 同步官方源
+
+每天自动拉取以下官方源的全部应用合并进来：
+
+| 官方源 | 应用 |
+| --- | --- |
+| kolbicz/WQFiles | WQ Files |
+| ios151/Insav-releases | INSAV |
+| Kianuni/Erosion-CN | Erosion-CN |
+| imxieyi/Kernarium | Andarium |
+| FrizzleM/SideInstaller | SideInstaller、Nightflix |
+
+WQ Files、INSAV、Erosion-CN、Andarium、SideInstaller 不再需要单独添加官方源，只加这一个源就行。
+
 WQ Files、INSAV、Erosion-CN、Andarium 都有官方源，直接加官方的，不在这里重复收录。
