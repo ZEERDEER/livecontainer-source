@@ -2,7 +2,7 @@
   "name": "ZEERDEER",
   "identifier": "com.zeerdeer.livecontainer.source",
   "subtitle": "自用自动更新源",
-  "description": "GestaltX、Roam Control、twoyi、Tamio 的自动更新源，每天检查上游新版本。",
+  "description": "GestaltX、Roam Control、twoyi、Tamio、WrapPin、Nestvane 的自动更新源，每天检查上游新版本。",
   "website": "https://github.com/ZEERDEER/livecontainer-source",
   "apps": [
     {
@@ -92,6 +92,48 @@
         }
       ],
       "buildVersion": "8"
+    },
+    {
+      "name": "WrapPin",
+      "bundleIdentifier": "com.suversal.wrappin",
+      "developerName": "suversal",
+      "subtitle": "iOS 27+ 本机虚拟定位与步行路线测试工具",
+      "localizedDescription": "iOS 27+ 本机虚拟定位与步行路线测试工具。",
+      "version": "1.0.26",
+      "versionDate": "2026-11-24",
+      "versionDescription": "## WrapPin 1.0.26（Build 96）\n\n- **当前模拟目标** · 固定模拟时，地图单独标出当前目标。选中其他地点后，点「查看模拟位置」可以回到当前目标。#57\n- **精确选点** · 打开地图上的准星按钮，拖动地图或用摇杆微调。点「确认选点」后，再点「开始模拟定位」或「更换模拟位置」应用坐标。#58 #59\n- **选点面板** · 地点标题、收藏和清除按钮固定在面板上方。空间不足时可以滚动下方选项。\n- **收藏重命名** · 在「收藏与历史」里点收藏旁的铅笔，改名后保留原坐标和地址。#61\n\n### 安装\n\n- **Standard** · 使用 SideStore 等工具签装，运行时使用兼容的外部设备隧道。\n- **Tunnel** · 主 App 和内置扩展都需要支持 Packet Tunnel 的签名配置。\n\n两版均为未签名 IPA，支持 iOS/iPadOS 18.0 及以上。覆盖升级时使用原版本类型和签名身份。[安装说明](https://github.com/suversal/WrapPin/blob/v1.0.26/Documentation/Installation.zh-CN.md)\n\n[简体中文更新说明](https://github.com/suversal/WrapPin/blob/v1.0.26/Documentation/Release-1.0.26.zh-CN.md) · [English release notes](https://github.com/suversal/WrapPin/blob/v1.0.26/Documentation/Release-1.0.26.md)\n",
+      "downloadURL": "https://github.com/suversal/WrapPin/releases/download/v1.0.26/WrapPin-Standard-1.0.26-build96-unsigned.ipa",
+      "size": 7161177,
+      "versions": [
+        {
+          "version": "1.0.26",
+          "date": "2026-11-24",
+          "localizedDescription": "## WrapPin 1.0.26（Build 96）\n\n- **当前模拟目标** · 固定模拟时，地图单独标出当前目标。选中其他地点后，点「查看模拟位置」可以回到当前目标。#57\n- **精确选点** · 打开地图上的准星按钮，拖动地图或用摇杆微调。点「确认选点」后，再点「开始模拟定位」或「更换模拟位置」应用坐标。#58 #59\n- **选点面板** · 地点标题、收藏和清除按钮固定在面板上方。空间不足时可以滚动下方选项。\n- **收藏重命名** · 在「收藏与历史」里点收藏旁的铅笔，改名后保留原坐标和地址。#61\n\n### 安装\n\n- **Standard** · 使用 SideStore 等工具签装，运行时使用兼容的外部设备隧道。\n- **Tunnel** · 主 App 和内置扩展都需要支持 Packet Tunnel 的签名配置。\n\n两版均为未签名 IPA，支持 iOS/iPadOS 18.0 及以上。覆盖升级时使用原版本类型和签名身份。[安装说明](https://github.com/suversal/WrapPin/blob/v1.0.26/Documentation/Installation.zh-CN.md)\n\n[简体中文更新说明](https://github.com/suversal/WrapPin/blob/v1.0.26/Documentation/Release-1.0.26.zh-CN.md) · [English release notes](https://github.com/suversal/WrapPin/blob/v1.0.26/Documentation/Release-1.0.26.md)\n",
+          "downloadURL": "https://github.com/suversal/WrapPin/releases/download/v1.0.26/WrapPin-Standard-1.0.26-build96-unsigned.ipa",
+          "size": 7161177
+        }
+      ]
+    },
+    {
+      "name": "Nestvane",
+      "bundleIdentifier": "com.atomsprout.nestvane",
+      "developerName": "atomsprout",
+      "subtitle": "Android 17 running inside an iOS app, without JIT",
+      "localizedDescription": "Android 17 running inside an iOS app, without JIT.",
+      "version": "1.12",
+      "versionDate": "2026-11-25",
+      "versionDescription": "Android 17 inside an iPhone or iPad app, with no JIT and no jailbreak. Version 1.12 adds two things asked for in [#5](https://github.com/atomsprout/nestvane/issues/5): a backup of the whole Android, and the official KernelSU Manager.\n\n**Nestvane is still for developers only.** The only way to run it is to sign the IPA with a paid Apple Developer Program membership (US$99 a year) and sideload it.\n\n## New in 1.12\n\n- **Back up and restore Android** (#5, item 12). Two new items in the More menu. **Back Up Android…** stops Android, saves its apps, their data, its settings and your root answers in one file, and lets you choose where to keep it; Android then starts again. **Restore Android…** puts a backup you choose in place and starts Android from it. What Android had before is kept until Android reaches its home screen from the backup, and put back if it does not get there. The shared folder (On My iPhone → Nestvane → Android) is not in the backup: it is in the Files app already. On an iPhone 14, 507 MB of Android data made a 331 MB backup, and restoring it took under a second. An iPhone backup already includes Android's data; this is for going back to a moment (before trying something with root, say) or for moving only Android.\n- **KernelSU Manager** (#5, item 5). With root turned on in Nestvane's Settings, the official KernelSU Manager (3.3.1, from [KernelSU's releases](https://github.com/tiann/KernelSU/releases)) shows KernelSU as **Working**, lists your apps, and its switch for each app allows or refuses root. Its answers and the ones you give in the iOS prompt are the same answers: change one and the other shows it. Only the Manager signed by KernelSU is recognized. KernelSU's driver is answered by Nestvane's own kernel layer; no KernelSU code is in Nestvane. Download the Manager yourself and install it as any APK.\n- **Programs inside an app's own files run.** An app that ships a program in its native libraries and starts it (as KernelSU Manager, terminal apps and ",
+      "downloadURL": "https://github.com/atomsprout/nestvane/releases/download/v1.12/Nestvane-1.12.ipa",
+      "size": 1241491105,
+      "versions": [
+        {
+          "version": "1.12",
+          "date": "2026-11-25",
+          "localizedDescription": "Android 17 inside an iPhone or iPad app, with no JIT and no jailbreak. Version 1.12 adds two things asked for in [#5](https://github.com/atomsprout/nestvane/issues/5): a backup of the whole Android, and the official KernelSU Manager.\n\n**Nestvane is still for developers only.** The only way to run it is to sign the IPA with a paid Apple Developer Program membership (US$99 a year) and sideload it.\n\n## New in 1.12\n\n- **Back up and restore Android** (#5, item 12). Two new items in the More menu. **Back Up Android…** stops Android, saves its apps, their data, its settings and your root answers in one file, and lets you choose where to keep it; Android then starts again. **Restore Android…** puts a backup you choose in place and starts Android from it. What Android had before is kept until Android reaches its home screen from the backup, and put back if it does not get there. The shared folder (On My iPhone → Nestvane → Android) is not in the backup: it is in the Files app already. On an iPhone 14, 507 MB of Android data made a 331 MB backup, and restoring it took under a second. An iPhone backup already includes Android's data; this is for going back to a moment (before trying something with root, say) or for moving only Android.\n- **KernelSU Manager** (#5, item 5). With root turned on in Nestvane's Settings, the official KernelSU Manager (3.3.1, from [KernelSU's releases](https://github.com/tiann/KernelSU/releases)) shows KernelSU as **Working**, lists your apps, and its switch for each app allows or refuses root. Its answers and the ones you give in the iOS prompt are the same answers: change one and the other shows it. Only the Manager signed by KernelSU is recognized. KernelSU's driver is answered by Nestvane's own kernel layer; no KernelSU code is in Nestvane. Download the Manager yourself and install it as any APK.\n- **Programs inside an app's own files run.** An app that ships a program in its native libraries and starts it (as KernelSU Manager, terminal apps and ",
+          "downloadURL": "https://github.com/atomsprout/nestvane/releases/download/v1.12/Nestvane-1.12.ipa",
+          "size": 1241491105
+        }
+      ]
     }
   ]
 }
