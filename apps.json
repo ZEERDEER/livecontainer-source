@@ -69,6 +69,29 @@
         }
       ],
       "buildVersion": "940"
+    },
+    {
+      "name": "Tamio",
+      "bundleIdentifier": "sb.moe.tamio",
+      "developerName": "zxfccmm4",
+      "subtitle": "Native iOS SSH client with Ghostty terminal",
+      "localizedDescription": "Native iOS/iPadOS & macOS SSH client with Ghostty terminal, live telemetry charts, SFTP and iCloud sync.",
+      "version": "0.2.21",
+      "versionDate": "2026-11-25",
+      "versionDescription": "Unsigned sideloadable iOS/iPadOS IPA (`TamioMobile-v0.2.21-ios.8.ipa`) and ad-hoc signed macOS DMG (`Tamio-v0.2.21-ios.8-macOS.dmg`). Built from [zxfccmm4/tamio](https://github.com/zxfccmm4/tamio) (forked from [missuo/tamio](https://github.com/missuo/tamio)).",
+      "downloadURL": "https://github.com/zxfccmm4/tamio/releases/download/v0.2.21-ios.8/TamioMobile-v0.2.21-ios.8.ipa",
+      "size": 23949180,
+      "versions": [
+        {
+          "version": "0.2.21",
+          "date": "2026-11-25",
+          "localizedDescription": "Unsigned sideloadable iOS/iPadOS IPA (`TamioMobile-v0.2.21-ios.8.ipa`) and ad-hoc signed macOS DMG (`Tamio-v0.2.21-ios.8-macOS.dmg`). Built from [zxfccmm4/tamio](https://github.com/zxfccmm4/tamio) (forked from [missuo/tamio](https://github.com/missuo/tamio)).",
+          "downloadURL": "https://github.com/zxfccmm4/tamio/releases/download/v0.2.21-ios.8/TamioMobile-v0.2.21-ios.8.ipa",
+          "size": 23949180,
+          "buildVersion": "8"
+        }
+      ],
+      "buildVersion": "8"
     }
   ]
 }
