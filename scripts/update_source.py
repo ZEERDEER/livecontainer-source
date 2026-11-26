@@ -90,15 +90,20 @@ OFFICIAL_SOURCES = [
     "https://raw.githubusercontent.com/imxieyi/Kernarium/main/sideload/source.json",
     # SideInstaller (+ Nightflix)
     "https://raw.githubusercontent.com/FrizzleM/SideInstaller/main/frizzlem.json",
+    # Swipt (nightly)
+    "https://github.com/swipt-automation/swipt/releases/download/nightly/altstore.json",
 ]
+
+
+def http_get(url, headers=None):
+    req = urllib.request.Request(url, headers=headers or {})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return r.read()
 
 
 def fetch_official(url):
     data = json.loads(http_get(url, {"User-Agent": "Mozilla/5.0"}))
     return data.get("apps", [])
-    req = urllib.request.Request(url, headers=headers or {})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return r.read()
 
 
 def github_latest(repo, tag_regex=None, asset_match=None):
