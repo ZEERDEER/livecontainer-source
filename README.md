@@ -18,5 +18,7 @@ https://raw.githubusercontent.com/ZEERDEER/livecontainer-source/main/apps.json
 | Roam Control | seanhowarthdev/Roam-Control |
 | twoyi | twoyi.app/ios/ |
 | Tamio | zxfccmm4/tamio |
+| WrapPin | suversal/WrapPin |
+| Nestvane | atomsprout/nestvane |
 
 WQ Files、INSAV、Erosion-CN、Andarium 都有官方源，直接加官方的，不在这里重复收录。
