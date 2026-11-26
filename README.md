@@ -32,6 +32,7 @@ https://raw.githubusercontent.com/ZEERDEER/livecontainer-source/main/apps.json
 | Kianuni/Erosion-CN | Erosion-CN |
 | imxieyi/Kernarium | Andarium |
 | FrizzleM/SideInstaller | SideInstaller、Nightflix |
+| swipt-automation/swipt | Swipt |
 
 WQ Files、INSAV、Erosion-CN、Andarium、SideInstaller 不再需要单独添加官方源，只加这一个源就行。
 
