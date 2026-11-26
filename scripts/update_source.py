@@ -45,6 +45,17 @@ APPS = [
         "localizedDescription": "A full Android system inside one app. No jailbreak, no JIT.",
         "kind": "twoyi",
     },
+    {
+        "name": "Tamio",
+        "bundleIdentifier": "sb.moe.tamio",
+        "developerName": "zxfccmm4",
+        "subtitle": "Native iOS SSH client with Ghostty terminal",
+        "localizedDescription": "Native iOS/iPadOS & macOS SSH client with Ghostty terminal, live telemetry charts, SFTP and iCloud sync.",
+        "kind": "github",
+        "repo": "zxfccmm4/tamio",
+        # tag looks like v0.2.21-ios.8 -> version 0.2.21, build 8
+        "tag_regex": r"v?([\d.]+)-ios\.(\d+)",
+    },
 ]
 
 
@@ -54,7 +65,7 @@ def http_get(url, headers=None):
         return r.read()
 
 
-def github_latest(repo):
+def github_latest(repo, tag_regex=None):
     token = os.environ.get("GITHUB_TOKEN", "")
     headers = {"Accept": "application/vnd.github+json"}
     if token:
@@ -62,9 +73,16 @@ def github_latest(repo):
     data = json.loads(http_get(f"https://api.github.com/repos/{repo}/releases/latest", headers))
     tag = data["tag_name"]
     version = tag[1:] if tag.startswith("v") else tag
+    build = None
+    if tag_regex:
+        m = re.search(tag_regex, tag)
+        if m:
+            version = m.group(1)
+            build = m.group(2) if m.lastindex and m.lastindex >= 2 else None
     ipa = next(a for a in data["assets"] if a["name"].lower().endswith(".ipa"))
     return {
         "version": version,
+        "buildVersion": build,
         "versionDate": (data.get("published_at") or "")[:10],
         "downloadURL": ipa["browser_download_url"],
         "size": ipa["size"],
@@ -110,7 +128,7 @@ def main():
         kind = cfg["kind"]
         try:
             if kind == "github":
-                info = github_latest(cfg["repo"])
+                info = github_latest(cfg["repo"], cfg.get("tag_regex"))
             else:
                 info = twoyi_latest()
         except Exception as e:
