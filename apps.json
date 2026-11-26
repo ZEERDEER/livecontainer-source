@@ -1,0 +1,74 @@
+{
+  "name": "ZEERDEER",
+  "identifier": "com.zeerdeer.livecontainer.source",
+  "subtitle": "自用自动更新源",
+  "description": "GestaltX、Roam Control、twoyi 的自动更新源，每天检查上游新版本。",
+  "website": "https://github.com/ZEERDEER/livecontainer-source",
+  "apps": [
+    {
+      "name": "GestaltX",
+      "bundleIdentifier": "com.huami.gestultx",
+      "developerName": "huami1314",
+      "subtitle": "MobileGestalt editor",
+      "localizedDescription": "MobileGestalt editor for iOS.",
+      "version": "1.1.1",
+      "versionDate": "2026-11-13",
+      "versionDescription": "English | [简体中文](https://github.com/huamidev/GestaltX/blob/main/CHANGELOG_ZH-CN.md)\n\nBuild `11140102`.\n\n### Added\n\n- App Audio Library: replace notification sounds with custom audio. Apps not shown in the list can use the capture guide to obtain their notification-sound paths.\n- Pairing & Device Connection: used to obtain required paths.\n\n### Changed\n\n- Case-insensitive cache UUID comparison (#131)\n- Reject trailing text in date fields (#132)\n- Share-inbox fallback (#133)\n- Validate backup metadata filenames (#134)\n- Reduce cache descriptor string-scan allocations (#135)\n- Reuse one preview snapshot for field search (#136)\n- Preserve field edits over layout presets (#137)\n- Preserve existing plist keys when editing fields (#138)\n- Reduce allocations in exact plist comparisons (#139)\n- Traverse document differences once (#140)\n- Fix Face ID failing after enabling Apple Intelligence (#128)\n- Add missing localization for #128 (#146)\n- Pairing paths are migrated when a reinstall moves the app data container.\n\n### Fixed\n\n- Fix pairing failure in side-loaded release builds.\n- Add the missing Face ID recovery localization strings.\n- Fix audio file selection in side-loaded builds.\n- Refresh captured sounds immediately and cache the app audio list.\n- Show LocalDevVPN guidance and stop capture when the tunnel does not connect.\n",
+      "downloadURL": "https://github.com/huami1314/GestaltX/releases/download/v1.1.1/GestaltX_1.1.1.ipa",
+      "size": 6774794,
+      "versions": [
+        {
+          "version": "1.1.1",
+          "date": "2026-11-13",
+          "localizedDescription": "English | [简体中文](https://github.com/huamidev/GestaltX/blob/main/CHANGELOG_ZH-CN.md)\n\nBuild `11140102`.\n\n### Added\n\n- App Audio Library: replace notification sounds with custom audio. Apps not shown in the list can use the capture guide to obtain their notification-sound paths.\n- Pairing & Device Connection: used to obtain required paths.\n\n### Changed\n\n- Case-insensitive cache UUID comparison (#131)\n- Reject trailing text in date fields (#132)\n- Share-inbox fallback (#133)\n- Validate backup metadata filenames (#134)\n- Reduce cache descriptor string-scan allocations (#135)\n- Reuse one preview snapshot for field search (#136)\n- Preserve field edits over layout presets (#137)\n- Preserve existing plist keys when editing fields (#138)\n- Reduce allocations in exact plist comparisons (#139)\n- Traverse document differences once (#140)\n- Fix Face ID failing after enabling Apple Intelligence (#128)\n- Add missing localization for #128 (#146)\n- Pairing paths are migrated when a reinstall moves the app data container.\n\n### Fixed\n\n- Fix pairing failure in side-loaded release builds.\n- Add the missing Face ID recovery localization strings.\n- Fix audio file selection in side-loaded builds.\n- Refresh captured sounds immediately and cache the app audio list.\n- Show LocalDevVPN guidance and stop capture when the tunnel does not connect.\n",
+          "downloadURL": "https://github.com/huami1314/GestaltX/releases/download/v1.1.1/GestaltX_1.1.1.ipa",
+          "size": 6774794
+        }
+      ]
+    },
+    {
+      "name": "Roam Control",
+      "bundleIdentifier": "com.roamcontrol",
+      "developerName": "seanhowarthdev",
+      "subtitle": "Choose, test and move an iPhone's reported location",
+      "localizedDescription": "Choose, test and move an iPhone's reported location.",
+      "version": "0.9.9",
+      "versionDate": "2026-10-20",
+      "versionDescription": "<!-- roam-control-distribution-update -->\n\n> [!IMPORTANT]\n> **Distribution update - 25 November 2026**\n>\n> Roam Control was released on the App Store on 24 November 2026. Following a subsequent re-evaluation by Apple, App Store and TestFlight availability have been disabled.\n>\n> The original [Roam Control 0.9.9 (Build 105)](https://github.com/seanhowarthdev/Roam-Control/releases/tag/v0.9.9) IPA is available again for independent sideloading. This is an existing release, not a new update.\n>\n> Apple has been contacted and clarification is pending.\n>\n> **Do not unnecessarily delete or uninstall your existing Roam Control installation.** Migration to the App Store remains suspended.\n>\n> Existing users are encouraged to create a backup through **Settings > Backup & Restore**, where supported, and save it safely outside the app.\n>\n> Roam Control has not been discontinued.\n>\n> See the [Installation Guide](https://github.com/seanhowarthdev/Roam-Control/blob/main/Documentation/Installation.md) for current guidance.\n\n**Available release:** Roam Control 0.9.9 (Build 105)\n\nOriginally released on 20 October 2026. Restored for independent sideloading on 25 November 2026.\n\nThe IPA attached below is the original, unchanged Build 105 release.\n\nBuild 108 was released on the App Store on 24 November 2026 and removed on 25 November 2026. Existing users should retain their working installation.\n\n[Download Build 105 IPA](https://github.com/seanhowarthdev/Roam-Control/releases/download/v0.9.9/RoamControl-0.9.9-Build105.ipa)\n\n---\n\n## Highlights\n\n### 🌍 Roam Control in 10 Languages\nChoose English, Hebrew, Arabic, Simplified Chinese, Traditional Chinese, Japanese, Vietnamese, French, German or Spanish, or use System Default to select from the supported languages based on your iPhone's language preferences. Switch languages immediately, with right-to-left layout support for Hebrew and Arabic.\n\n### 🗺️ Better Maps and Routes\nRefined map controls, route handling and coordinate compatibility, with",
+      "downloadURL": "https://github.com/seanhowarthdev/Roam-Control/releases/download/v0.9.9/RoamControl-0.9.9-Build105.ipa",
+      "size": 4627321,
+      "versions": [
+        {
+          "version": "0.9.9",
+          "date": "2026-10-20",
+          "localizedDescription": "<!-- roam-control-distribution-update -->\n\n> [!IMPORTANT]\n> **Distribution update - 25 November 2026**\n>\n> Roam Control was released on the App Store on 24 November 2026. Following a subsequent re-evaluation by Apple, App Store and TestFlight availability have been disabled.\n>\n> The original [Roam Control 0.9.9 (Build 105)](https://github.com/seanhowarthdev/Roam-Control/releases/tag/v0.9.9) IPA is available again for independent sideloading. This is an existing release, not a new update.\n>\n> Apple has been contacted and clarification is pending.\n>\n> **Do not unnecessarily delete or uninstall your existing Roam Control installation.** Migration to the App Store remains suspended.\n>\n> Existing users are encouraged to create a backup through **Settings > Backup & Restore**, where supported, and save it safely outside the app.\n>\n> Roam Control has not been discontinued.\n>\n> See the [Installation Guide](https://github.com/seanhowarthdev/Roam-Control/blob/main/Documentation/Installation.md) for current guidance.\n\n**Available release:** Roam Control 0.9.9 (Build 105)\n\nOriginally released on 20 October 2026. Restored for independent sideloading on 25 November 2026.\n\nThe IPA attached below is the original, unchanged Build 105 release.\n\nBuild 108 was released on the App Store on 24 November 2026 and removed on 25 November 2026. Existing users should retain their working installation.\n\n[Download Build 105 IPA](https://github.com/seanhowarthdev/Roam-Control/releases/download/v0.9.9/RoamControl-0.9.9-Build105.ipa)\n\n---\n\n## Highlights\n\n### 🌍 Roam Control in 10 Languages\nChoose English, Hebrew, Arabic, Simplified Chinese, Traditional Chinese, Japanese, Vietnamese, French, German or Spanish, or use System Default to select from the supported languages based on your iPhone's language preferences. Switch languages immediately, with right-to-left layout support for Hebrew and Arabic.\n\n### 🗺️ Better Maps and Routes\nRefined map controls, route handling and coordinate compatibility, with",
+          "downloadURL": "https://github.com/seanhowarthdev/Roam-Control/releases/download/v0.9.9/RoamControl-0.9.9-Build105.ipa",
+          "size": 4627321
+        }
+      ]
+    },
+    {
+      "name": "twoyi",
+      "bundleIdentifier": "app.twoyi",
+      "developerName": "weishu",
+      "subtitle": "A full Android, inside one app",
+      "localizedDescription": "A full Android system inside one app. No jailbreak, no JIT.",
+      "version": "1.2.6",
+      "versionDate": "2026-11-26",
+      "versionDescription": "",
+      "downloadURL": "https://dl.twoyi.ai/twoyi_1.2.6_940.ipa",
+      "size": 612990792,
+      "versions": [
+        {
+          "version": "1.2.6",
+          "date": "2026-11-26",
+          "localizedDescription": "",
+          "downloadURL": "https://dl.twoyi.ai/twoyi_1.2.6_940.ipa",
+          "size": 612990792,
+          "buildVersion": "940"
+        }
+      ],
+      "buildVersion": "940"
+    }
+  ]
+}
