@@ -56,6 +56,26 @@ APPS = [
         # tag looks like v0.2.21-ios.8 -> version 0.2.21, build 8
         "tag_regex": r"v?([\d.]+)-ios\.(\d+)",
     },
+    {
+        "name": "WrapPin",
+        "bundleIdentifier": "com.suversal.wrappin",
+        "developerName": "suversal",
+        "subtitle": "iOS 27+ 本机虚拟定位与步行路线测试工具",
+        "localizedDescription": "iOS 27+ 本机虚拟定位与步行路线测试工具。",
+        "kind": "github",
+        "repo": "suversal/WrapPin",
+        # two variants are published; Standard is the one signable with a free Apple ID
+        "asset_match": "Standard",
+    },
+    {
+        "name": "Nestvane",
+        "bundleIdentifier": "com.atomsprout.nestvane",
+        "developerName": "atomsprout",
+        "subtitle": "Android 17 running inside an iOS app, without JIT",
+        "localizedDescription": "Android 17 running inside an iOS app, without JIT.",
+        "kind": "github",
+        "repo": "atomsprout/nestvane",
+    },
 ]
 
 
@@ -65,7 +85,7 @@ def http_get(url, headers=None):
         return r.read()
 
 
-def github_latest(repo, tag_regex=None):
+def github_latest(repo, tag_regex=None, asset_match=None):
     token = os.environ.get("GITHUB_TOKEN", "")
     headers = {"Accept": "application/vnd.github+json"}
     if token:
@@ -79,7 +99,10 @@ def github_latest(repo, tag_regex=None):
         if m:
             version = m.group(1)
             build = m.group(2) if m.lastindex and m.lastindex >= 2 else None
-    ipa = next(a for a in data["assets"] if a["name"].lower().endswith(".ipa"))
+    ipas = [a for a in data["assets"] if a["name"].lower().endswith(".ipa")]
+    if asset_match:
+        ipas = [a for a in ipas if asset_match in a["name"]]
+    ipa = ipas[0]
     return {
         "version": version,
         "buildVersion": build,
@@ -128,7 +151,7 @@ def main():
         kind = cfg["kind"]
         try:
             if kind == "github":
-                info = github_latest(cfg["repo"], cfg.get("tag_regex"))
+                info = github_latest(cfg["repo"], cfg.get("tag_regex"), cfg.get("asset_match"))
             else:
                 info = twoyi_latest()
         except Exception as e:
@@ -167,7 +190,7 @@ def main():
         "name": "ZEERDEER",
         "identifier": "com.zeerdeer.livecontainer.source",
         "subtitle": "自用自动更新源",
-        "description": "GestaltX、Roam Control、twoyi、Tamio 的自动更新源，每天检查上游新版本。",
+        "description": "GestaltX、Roam Control、twoyi、Tamio、WrapPin、Nestvane 的自动更新源，每天检查上游新版本。",
         "website": "https://github.com/ZEERDEER/livecontainer-source",
         "apps": apps,
     }
