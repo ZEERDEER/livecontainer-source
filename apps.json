@@ -54,14 +54,14 @@
       "subtitle": "A full Android, inside one app",
       "localizedDescription": "A full Android system inside one app. No jailbreak, no JIT.",
       "version": "1.2.6",
-      "versionDate": "2026-11-26",
+      "versionDate": "2026-11-27",
       "versionDescription": "",
       "downloadURL": "https://dl.twoyi.ai/twoyi_1.2.6_940.ipa",
       "size": 612990792,
       "versions": [
         {
           "version": "1.2.6",
-          "date": "2026-11-26",
+          "date": "2026-11-27",
           "localizedDescription": "",
           "downloadURL": "https://dl.twoyi.ai/twoyi_1.2.6_940.ipa",
           "size": 612990792,
@@ -76,22 +76,20 @@
       "developerName": "zxfccmm4",
       "subtitle": "Native iOS SSH client with Ghostty terminal",
       "localizedDescription": "Native iOS/iPadOS & macOS SSH client with Ghostty terminal, live telemetry charts, SFTP and iCloud sync.",
-      "version": "0.2.21",
-      "versionDate": "2026-11-25",
-      "versionDescription": "Unsigned sideloadable iOS/iPadOS IPA (`TamioMobile-v0.2.21-ios.8.ipa`) and ad-hoc signed macOS DMG (`Tamio-v0.2.21-ios.8-macOS.dmg`). Built from [zxfccmm4/tamio](https://github.com/zxfccmm4/tamio) (forked from [missuo/tamio](https://github.com/missuo/tamio)).",
-      "downloadURL": "https://github.com/zxfccmm4/tamio/releases/download/v0.2.21-ios.8/TamioMobile-v0.2.21-ios.8.ipa",
-      "size": 23949180,
+      "version": "0.2.22",
+      "versionDate": "2026-11-27",
+      "versionDescription": "### Added\n- **VPS renewal reminders with selectable currency & visible server notes.** Servers can now store a renewal date, billing cycle, currency unit (`USD`, `CNY`, `EUR`, `HKD`, `JPY`, `GBP`, `TWD`, `KRW`, or custom), price, and reminder window; countdown badges and notes appear directly on Home cards and inside Server Detail / Inspector (with one-tap **Renewed**), with independent toggles in Settings.\n- **In-terminal SSH AI Copilot with screen context & command injection.** Both iOS and macOS SSH terminal toolbars now include a redesigned action layout and an **AI Copilot** drawer/side-panel scoped to the current host, with optional terminal screen capture and one-tap **Insert** / **Run in SSH** buttons for generated commands.\n- **Redesigned Lock Screen Live Activity & Dynamic Island.** Active iOS SSH / Ghost Remote sessions now display a gradient terminal badge, country flag, `user@host` endpoint, live timer, and real-time CPU / Memory progress bars.\n- **Full iOS feature parity on native macOS (`Application/Tamio`).** macOS now includes the FlowDown-inspired AI Fleet Assistant (with 40-round continuous tool loop, wrap-up summary, and one-tap **Continue**), a 4-tab server Monitor (`Overview`, animated 6-chart `Charts`, sortable `Processes`, and Docker `Containers`), selective 4-category AES-256-GCM `.tamiobackup.json` Export/Import, a terminal Find bar (`⌘F`), and native macOS Apple Shortcuts (`AppIntents`).\n- **Redesigned compact Home server cards on macOS and iOS.** High-density 3-column capsule bar layout (`CPU`, `Memory`/`Swap`, `Disk`), single-line telemetry footer, and matching-height animated connecting skeleton.\n- **Complete 5-language localization** across iOS and macOS (`en`, `zh-Hans`, `zh-Hant`, `ja`, `ko`).\n\n### Fixed\n- **Persisted terminal font size across new SSH sessions.** Adjusting text size now reliably carries over to every newly opened SSH terminal on both iOS and macOS.\n- **Fixed ad-hoc macOS DMG launch crash (`Sparkle.framework` Team ID ",
+      "downloadURL": "https://github.com/zxfccmm4/tamio/releases/download/v0.2.22/TamioMobile-v0.2.22.ipa",
+      "size": 24178574,
       "versions": [
         {
-          "version": "0.2.21",
-          "date": "2026-11-25",
-          "localizedDescription": "Unsigned sideloadable iOS/iPadOS IPA (`TamioMobile-v0.2.21-ios.8.ipa`) and ad-hoc signed macOS DMG (`Tamio-v0.2.21-ios.8-macOS.dmg`). Built from [zxfccmm4/tamio](https://github.com/zxfccmm4/tamio) (forked from [missuo/tamio](https://github.com/missuo/tamio)).",
-          "downloadURL": "https://github.com/zxfccmm4/tamio/releases/download/v0.2.21-ios.8/TamioMobile-v0.2.21-ios.8.ipa",
-          "size": 23949180,
-          "buildVersion": "8"
+          "version": "0.2.22",
+          "date": "2026-11-27",
+          "localizedDescription": "### Added\n- **VPS renewal reminders with selectable currency & visible server notes.** Servers can now store a renewal date, billing cycle, currency unit (`USD`, `CNY`, `EUR`, `HKD`, `JPY`, `GBP`, `TWD`, `KRW`, or custom), price, and reminder window; countdown badges and notes appear directly on Home cards and inside Server Detail / Inspector (with one-tap **Renewed**), with independent toggles in Settings.\n- **In-terminal SSH AI Copilot with screen context & command injection.** Both iOS and macOS SSH terminal toolbars now include a redesigned action layout and an **AI Copilot** drawer/side-panel scoped to the current host, with optional terminal screen capture and one-tap **Insert** / **Run in SSH** buttons for generated commands.\n- **Redesigned Lock Screen Live Activity & Dynamic Island.** Active iOS SSH / Ghost Remote sessions now display a gradient terminal badge, country flag, `user@host` endpoint, live timer, and real-time CPU / Memory progress bars.\n- **Full iOS feature parity on native macOS (`Application/Tamio`).** macOS now includes the FlowDown-inspired AI Fleet Assistant (with 40-round continuous tool loop, wrap-up summary, and one-tap **Continue**), a 4-tab server Monitor (`Overview`, animated 6-chart `Charts`, sortable `Processes`, and Docker `Containers`), selective 4-category AES-256-GCM `.tamiobackup.json` Export/Import, a terminal Find bar (`⌘F`), and native macOS Apple Shortcuts (`AppIntents`).\n- **Redesigned compact Home server cards on macOS and iOS.** High-density 3-column capsule bar layout (`CPU`, `Memory`/`Swap`, `Disk`), single-line telemetry footer, and matching-height animated connecting skeleton.\n- **Complete 5-language localization** across iOS and macOS (`en`, `zh-Hans`, `zh-Hant`, `ja`, `ko`).\n\n### Fixed\n- **Persisted terminal font size across new SSH sessions.** Adjusting text size now reliably carries over to every newly opened SSH terminal on both iOS and macOS.\n- **Fixed ad-hoc macOS DMG launch crash (`Sparkle.framework` Team ID ",
+          "downloadURL": "https://github.com/zxfccmm4/tamio/releases/download/v0.2.22/TamioMobile-v0.2.22.ipa",
+          "size": 24178574
         }
-      ],
-      "buildVersion": "8"
+      ]
     },
     {
       "name": "WrapPin",
@@ -99,18 +97,18 @@
       "developerName": "suversal",
       "subtitle": "iOS 27+ 本机虚拟定位与步行路线测试工具",
       "localizedDescription": "iOS 27+ 本机虚拟定位与步行路线测试工具。",
-      "version": "1.0.26",
-      "versionDate": "2026-11-24",
-      "versionDescription": "## WrapPin 1.0.26（Build 96）\n\n- **当前模拟目标** · 固定模拟时，地图单独标出当前目标。选中其他地点后，点「查看模拟位置」可以回到当前目标。#57\n- **精确选点** · 打开地图上的准星按钮，拖动地图或用摇杆微调。点「确认选点」后，再点「开始模拟定位」或「更换模拟位置」应用坐标。#58 #59\n- **选点面板** · 地点标题、收藏和清除按钮固定在面板上方。空间不足时可以滚动下方选项。\n- **收藏重命名** · 在「收藏与历史」里点收藏旁的铅笔，改名后保留原坐标和地址。#61\n\n### 安装\n\n- **Standard** · 使用 SideStore 等工具签装，运行时使用兼容的外部设备隧道。\n- **Tunnel** · 主 App 和内置扩展都需要支持 Packet Tunnel 的签名配置。\n\n两版均为未签名 IPA，支持 iOS/iPadOS 18.0 及以上。覆盖升级时使用原版本类型和签名身份。[安装说明](https://github.com/suversal/WrapPin/blob/v1.0.26/Documentation/Installation.zh-CN.md)\n\n[简体中文更新说明](https://github.com/suversal/WrapPin/blob/v1.0.26/Documentation/Release-1.0.26.zh-CN.md) · [English release notes](https://github.com/suversal/WrapPin/blob/v1.0.26/Documentation/Release-1.0.26.md)\n",
-      "downloadURL": "https://github.com/suversal/WrapPin/releases/download/v1.0.26/WrapPin-Standard-1.0.26-build96-unsigned.ipa",
-      "size": 7161177,
+      "version": "1.0.27",
+      "versionDate": "2026-11-26",
+      "versionDescription": "## WrapPin 1.0.27（Build 106）\n\n### 更新内容\n- **支持保存自定义路线**：可在“收藏与历史”中管理、重命名或删除已保存的自定义路线，一键载入路线途经点、坐标模式与速度。\n- **地图最近搜索记录**：在搜索框下方展示近期搜过的地点，点击即可快速复用。\n- **iOS 26+ Liquid Glass 与交互打磨**：适配 Liquid Glass 视觉风格，优化底部面板拖拽物理手感，以及首页地图、路线编辑和精确选点的浮层细节。\n\n### What's New\n- **Saved Custom Routes**: Save custom routes for reuse, rename or delete them in Saved Places, and reload their waypoints, coordinate mode and speed in one tap.\n- **Recent Map Searches**: Show recent searches below the map search bar for quick reuse without retyping.\n- **iOS 26+ Liquid Glass & Interaction Polish**: Refined Liquid Glass styling, smoother bottom-dock drag physics, and cleaner map overlays across the home map, route editors and precision picker.\n\n### 安装包与校验（iOS/iPadOS 18.0+，未签名）\n- **Standard（SideStore 推荐）**：`WrapPin-Standard-1.0.27-build106-unsigned.ipa`\n  - SHA-256: `e4391ec3f1c0bdc04d90551363fd85212e593cb74a0a40a1b4fec27611ecac1a`\n- **Tunnel（内置隧道，需匹配 Packet Tunnel 签名配置）**：`WrapPin-Tunnel-1.0.27-build106-unsigned.ipa`\n  - SHA-256: `4c20b5b1438e4da4aba38bc1cf0ddac716d008715f6d6d1330c51d260e665653`\n",
+      "downloadURL": "https://github.com/suversal/WrapPin/releases/download/v1.0.27/WrapPin-Standard-1.0.27-build106-unsigned.ipa",
+      "size": 7254821,
       "versions": [
         {
-          "version": "1.0.26",
-          "date": "2026-11-24",
-          "localizedDescription": "## WrapPin 1.0.26（Build 96）\n\n- **当前模拟目标** · 固定模拟时，地图单独标出当前目标。选中其他地点后，点「查看模拟位置」可以回到当前目标。#57\n- **精确选点** · 打开地图上的准星按钮，拖动地图或用摇杆微调。点「确认选点」后，再点「开始模拟定位」或「更换模拟位置」应用坐标。#58 #59\n- **选点面板** · 地点标题、收藏和清除按钮固定在面板上方。空间不足时可以滚动下方选项。\n- **收藏重命名** · 在「收藏与历史」里点收藏旁的铅笔，改名后保留原坐标和地址。#61\n\n### 安装\n\n- **Standard** · 使用 SideStore 等工具签装，运行时使用兼容的外部设备隧道。\n- **Tunnel** · 主 App 和内置扩展都需要支持 Packet Tunnel 的签名配置。\n\n两版均为未签名 IPA，支持 iOS/iPadOS 18.0 及以上。覆盖升级时使用原版本类型和签名身份。[安装说明](https://github.com/suversal/WrapPin/blob/v1.0.26/Documentation/Installation.zh-CN.md)\n\n[简体中文更新说明](https://github.com/suversal/WrapPin/blob/v1.0.26/Documentation/Release-1.0.26.zh-CN.md) · [English release notes](https://github.com/suversal/WrapPin/blob/v1.0.26/Documentation/Release-1.0.26.md)\n",
-          "downloadURL": "https://github.com/suversal/WrapPin/releases/download/v1.0.26/WrapPin-Standard-1.0.26-build96-unsigned.ipa",
-          "size": 7161177
+          "version": "1.0.27",
+          "date": "2026-11-26",
+          "localizedDescription": "## WrapPin 1.0.27（Build 106）\n\n### 更新内容\n- **支持保存自定义路线**：可在“收藏与历史”中管理、重命名或删除已保存的自定义路线，一键载入路线途经点、坐标模式与速度。\n- **地图最近搜索记录**：在搜索框下方展示近期搜过的地点，点击即可快速复用。\n- **iOS 26+ Liquid Glass 与交互打磨**：适配 Liquid Glass 视觉风格，优化底部面板拖拽物理手感，以及首页地图、路线编辑和精确选点的浮层细节。\n\n### What's New\n- **Saved Custom Routes**: Save custom routes for reuse, rename or delete them in Saved Places, and reload their waypoints, coordinate mode and speed in one tap.\n- **Recent Map Searches**: Show recent searches below the map search bar for quick reuse without retyping.\n- **iOS 26+ Liquid Glass & Interaction Polish**: Refined Liquid Glass styling, smoother bottom-dock drag physics, and cleaner map overlays across the home map, route editors and precision picker.\n\n### 安装包与校验（iOS/iPadOS 18.0+，未签名）\n- **Standard（SideStore 推荐）**：`WrapPin-Standard-1.0.27-build106-unsigned.ipa`\n  - SHA-256: `e4391ec3f1c0bdc04d90551363fd85212e593cb74a0a40a1b4fec27611ecac1a`\n- **Tunnel（内置隧道，需匹配 Packet Tunnel 签名配置）**：`WrapPin-Tunnel-1.0.27-build106-unsigned.ipa`\n  - SHA-256: `4c20b5b1438e4da4aba38bc1cf0ddac716d008715f6d6d1330c51d260e665653`\n",
+          "downloadURL": "https://github.com/suversal/WrapPin/releases/download/v1.0.27/WrapPin-Standard-1.0.27-build106-unsigned.ipa",
+          "size": 7254821
         }
       ]
     },
@@ -120,18 +118,18 @@
       "developerName": "atomsprout",
       "subtitle": "Android 17 running inside an iOS app, without JIT",
       "localizedDescription": "Android 17 running inside an iOS app, without JIT.",
-      "version": "1.12",
-      "versionDate": "2026-11-25",
-      "versionDescription": "Android 17 inside an iPhone or iPad app, with no JIT and no jailbreak. Version 1.12 adds two things asked for in [#5](https://github.com/atomsprout/nestvane/issues/5): a backup of the whole Android, and the official KernelSU Manager.\n\n**Nestvane is still for developers only.** The only way to run it is to sign the IPA with a paid Apple Developer Program membership (US$99 a year) and sideload it.\n\n## New in 1.12\n\n- **Back up and restore Android** (#5, item 12). Two new items in the More menu. **Back Up Android…** stops Android, saves its apps, their data, its settings and your root answers in one file, and lets you choose where to keep it; Android then starts again. **Restore Android…** puts a backup you choose in place and starts Android from it. What Android had before is kept until Android reaches its home screen from the backup, and put back if it does not get there. The shared folder (On My iPhone → Nestvane → Android) is not in the backup: it is in the Files app already. On an iPhone 14, 507 MB of Android data made a 331 MB backup, and restoring it took under a second. An iPhone backup already includes Android's data; this is for going back to a moment (before trying something with root, say) or for moving only Android.\n- **KernelSU Manager** (#5, item 5). With root turned on in Nestvane's Settings, the official KernelSU Manager (3.3.1, from [KernelSU's releases](https://github.com/tiann/KernelSU/releases)) shows KernelSU as **Working**, lists your apps, and its switch for each app allows or refuses root. Its answers and the ones you give in the iOS prompt are the same answers: change one and the other shows it. Only the Manager signed by KernelSU is recognized. KernelSU's driver is answered by Nestvane's own kernel layer; no KernelSU code is in Nestvane. Download the Manager yourself and install it as any APK.\n- **Programs inside an app's own files run.** An app that ships a program in its native libraries and starts it (as KernelSU Manager, terminal apps and ",
-      "downloadURL": "https://github.com/atomsprout/nestvane/releases/download/v1.12/Nestvane-1.12.ipa",
-      "size": 1241491105,
+      "version": "1.19",
+      "versionDate": "2026-11-27",
+      "versionDescription": "Android 17 inside an iPhone or iPad app, with no JIT and no jailbreak. Version 1.19 is a small one on the way to 1.20: one process fewer always running, and a last safeguard in the renderer.\n\n**Nestvane is still for developers only.** The only way to run it is to sign the IPA with a paid Apple Developer Program membership (US$99 a year) and sideload it.\n\n## New in 1.19\n\n- **Turning the device works from the start.** Android used to run a program of its own only to tell Nestvane which way up its display is. It started 15 seconds after Android did, so turning the device before that showed the picture sideways, and it held nearly 1 GB of the address space that 1.18 found to be what runs out. The rotation is now read from Android's own log, and that program is no longer started.\n- **The renderer no longer closes the whole app when it cannot prepare a video picture.** This is what closed the app in 1.16 and 1.17 when address space ran out. 1.18 removed the cause; now, if it happens anyway, that one picture is left out. There is no way to make it happen on purpose, so this was checked only by playing video as before: 1080p and 4K play at about 29 frames a second.\n\n## Start time\n\n**The boot check did not pass; the gap is under 5%, so this release ships.** On an iPhone 14, the median of five starts to the Android home screen is **8.7 s** (8675 ms), 3.4% above the 8388 ms recorded for 1.11. The recorded baseline stays at 1.11's 8388 ms.\n\nMemory 36 s after launch is 2.96 GB, 0.07 GB less than 1.18.\n\n## Known problems\n\n- **Apps in the background are ended more readily than on a phone**, because each takes over a gigabyte of the shared address space. They start again when you open them.\n- **Once, Android's audio service stopped as a video started**, right after an app in the background was ended, and that playback had no sound. Seen once in 63 runs; not looked into.\n- **The tablet layout on iPad has not been tried on an iPad.** In it the home screen's search box overlaps the to",
+      "downloadURL": "https://github.com/atomsprout/nestvane/releases/download/v1.19/Nestvane-1.19.ipa",
+      "size": 1283800101,
       "versions": [
         {
-          "version": "1.12",
-          "date": "2026-11-25",
-          "localizedDescription": "Android 17 inside an iPhone or iPad app, with no JIT and no jailbreak. Version 1.12 adds two things asked for in [#5](https://github.com/atomsprout/nestvane/issues/5): a backup of the whole Android, and the official KernelSU Manager.\n\n**Nestvane is still for developers only.** The only way to run it is to sign the IPA with a paid Apple Developer Program membership (US$99 a year) and sideload it.\n\n## New in 1.12\n\n- **Back up and restore Android** (#5, item 12). Two new items in the More menu. **Back Up Android…** stops Android, saves its apps, their data, its settings and your root answers in one file, and lets you choose where to keep it; Android then starts again. **Restore Android…** puts a backup you choose in place and starts Android from it. What Android had before is kept until Android reaches its home screen from the backup, and put back if it does not get there. The shared folder (On My iPhone → Nestvane → Android) is not in the backup: it is in the Files app already. On an iPhone 14, 507 MB of Android data made a 331 MB backup, and restoring it took under a second. An iPhone backup already includes Android's data; this is for going back to a moment (before trying something with root, say) or for moving only Android.\n- **KernelSU Manager** (#5, item 5). With root turned on in Nestvane's Settings, the official KernelSU Manager (3.3.1, from [KernelSU's releases](https://github.com/tiann/KernelSU/releases)) shows KernelSU as **Working**, lists your apps, and its switch for each app allows or refuses root. Its answers and the ones you give in the iOS prompt are the same answers: change one and the other shows it. Only the Manager signed by KernelSU is recognized. KernelSU's driver is answered by Nestvane's own kernel layer; no KernelSU code is in Nestvane. Download the Manager yourself and install it as any APK.\n- **Programs inside an app's own files run.** An app that ships a program in its native libraries and starts it (as KernelSU Manager, terminal apps and ",
-          "downloadURL": "https://github.com/atomsprout/nestvane/releases/download/v1.12/Nestvane-1.12.ipa",
-          "size": 1241491105
+          "version": "1.19",
+          "date": "2026-11-27",
+          "localizedDescription": "Android 17 inside an iPhone or iPad app, with no JIT and no jailbreak. Version 1.19 is a small one on the way to 1.20: one process fewer always running, and a last safeguard in the renderer.\n\n**Nestvane is still for developers only.** The only way to run it is to sign the IPA with a paid Apple Developer Program membership (US$99 a year) and sideload it.\n\n## New in 1.19\n\n- **Turning the device works from the start.** Android used to run a program of its own only to tell Nestvane which way up its display is. It started 15 seconds after Android did, so turning the device before that showed the picture sideways, and it held nearly 1 GB of the address space that 1.18 found to be what runs out. The rotation is now read from Android's own log, and that program is no longer started.\n- **The renderer no longer closes the whole app when it cannot prepare a video picture.** This is what closed the app in 1.16 and 1.17 when address space ran out. 1.18 removed the cause; now, if it happens anyway, that one picture is left out. There is no way to make it happen on purpose, so this was checked only by playing video as before: 1080p and 4K play at about 29 frames a second.\n\n## Start time\n\n**The boot check did not pass; the gap is under 5%, so this release ships.** On an iPhone 14, the median of five starts to the Android home screen is **8.7 s** (8675 ms), 3.4% above the 8388 ms recorded for 1.11. The recorded baseline stays at 1.11's 8388 ms.\n\nMemory 36 s after launch is 2.96 GB, 0.07 GB less than 1.18.\n\n## Known problems\n\n- **Apps in the background are ended more readily than on a phone**, because each takes over a gigabyte of the shared address space. They start again when you open them.\n- **Once, Android's audio service stopped as a video started**, right after an app in the background was ended, and that playback had no sound. Seen once in 63 runs; not looked into.\n- **The tablet layout on iPad has not been tried on an iPad.** In it the home screen's search box overlaps the to",
+          "downloadURL": "https://github.com/atomsprout/nestvane/releases/download/v1.19/Nestvane-1.19.ipa",
+          "size": 1283800101
         }
       ]
     },
@@ -140,11 +138,20 @@
       "bundleIdentifier": "cz.kolbi.wqfiles",
       "developerName": "kolbicz",
       "subtitle": "File manager for iOS 26 and 27 (worse_query)",
-      "localizedDescription": "File browser, app data manager and cache cleaner for iOS 26 and 27, built on the worse_query sandbox technique. No jailbreak and no kernel exploit.\n\n• Browse every app's data container, app groups, extension and daemon containers\n• Plist editor and hex viewer/editor; edits are backed up first\n• Select, move across apps, compress and extract ZIPs; import files and whole folders\n• Syntax highlighting, SQLite viewer and media player\n• Back up, restore and clear app data; AirDrop backups as ZIP\n• Cache cleaner\n\niOS 26 and 27 (tested on 26.7.1, 27.0.1 and 27.2.1; on iOS 26, System Data and System Groups are not available). Needs a signer that keeps the App Group entitlement (AltStore, SideStore or Impactor; not Sideloadly).",
+      "localizedDescription": "File browser, app data manager and cache cleaner for iOS 26 and 27, built on the worse_query sandbox technique. No jailbreak and no kernel exploit.\n\n• Browse every app's data container, app groups, extension and daemon containers\n• Plist editor and hex viewer/editor; edits are backed up first\n• Select, move across apps, compress and extract ZIPs; import files and whole folders\n• Syntax highlighting, SQLite viewer and media player\n• Back up, restore and clear app data; AirDrop backups as ZIP\n• Cache cleaner\n• Shortcuts actions for files, cache cleaning and app backups\n\niOS 26 and 27 (tested on 26.7.1, 27.0.1 and 27.2.1; on iOS 26, System Data and System Groups are not available). Needs a signer that keeps the App Group entitlement (AltStore, SideStore or Impactor; not Sideloadly).",
       "iconURL": "https://raw.githubusercontent.com/kolbicz/WQFiles/main/icons/AppIcon1024.png",
       "tintColor": "#1E8FC7",
       "category": "utilities",
       "versions": [
+        {
+          "version": "0.9.30",
+          "buildVersion": "115",
+          "date": "2026-11-26",
+          "size": 2268148,
+          "downloadURL": "https://github.com/kolbicz/WQFiles/releases/download/v0.9.30/WQFiles.ipa",
+          "localizedDescription": "Shortcuts actions for files and apps (list, get, save, copy, move, rename, delete, clean caches, back up), a working update check, and many fixes from a full code review: safer restores and imports, fewer hangs, faster lists.",
+          "minOSVersion": "26.0"
+        },
         {
           "version": "0.9.20",
           "buildVersion": "114",
