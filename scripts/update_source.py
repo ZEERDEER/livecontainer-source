@@ -76,6 +76,15 @@ APPS = [
         "kind": "github",
         "repo": "atomsprout/nestvane",
     },
+    {
+        "name": "Reloc",
+        "bundleIdentifier": "dev.reloc.ios",
+        "developerName": "Reukix",
+        "subtitle": "虚拟定位与轨迹模拟",
+        "localizedDescription": "基于本地回环的 iOS 虚拟定位与轨迹模拟：地图选点、沿真实道路规划轨迹、Apple 快捷指令支持。",
+        "kind": "github",
+        "repo": "Reukix/Reloc",
+    },
 ]
 
 
